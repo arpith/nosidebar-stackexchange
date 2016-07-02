@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "NoSidebar StackExchange",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "cat_tied.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "*://stackoverflow.com/*", "*://*.stackexchange.com/*", "*://serverfault.com/*"
+    ],
+    "js": ["content.js"]
+  }
+  ]
+}
