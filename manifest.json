@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "NoSidebar StackExchange",
   "version": "0.1",
-  "browser_action": {
+  "page_action": {
     "default_icon": "cat_tied.png"
   },
   "background": {

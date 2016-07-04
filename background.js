@@ -1,7 +1,14 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-	// Send a message to the active tab
-	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-		var activeTab = tabs[0];
-		chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action"});
+chrome.pageAction.onClicked.addListener(function(tab) {
+	chrome.tabs.sendMessage(tab.id, {"message": "clicked_page_action"}, function(response) {
+		chrome.pageAction.hide(tab.id);
 	});
 });
+
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+		if( request.message === "enable_page_action" ) {
+			console.log("enabling page action");
+			chrome.pageAction.show(sender.tab.id);
+		}
+	}
+);
