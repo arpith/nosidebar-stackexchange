@@ -2,6 +2,7 @@
   "manifest_version": 2,
   "name": "NoSidebar StackExchange",
   "version": "0.1",
+  "description": "Hides Hot Network Questions sidebar on StackExchange websites",
   "page_action": {
     "default_icon": "cat_tied.png"
   },
@@ -11,7 +12,13 @@
   "content_scripts": [
   {
     "matches": [
-      "*://stackoverflow.com/*", "*://*.stackexchange.com/*", "*://serverfault.com/*"
+      "*://*.stackexchange.com/*",
+      "*://stackoverflow.com/*",
+      "*://serverfault.com/*",
+      "*://superuser.com/*",
+      "*://askubuntu.com/*",
+      "*://mathoverflow.net/*",
+      "*://stackapps.com/*"
     ],
     "js": ["content.js"]
   }
