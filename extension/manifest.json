@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
   "name": "NoSidebar StackExchange",
+  "short_name": "NoSidebar SE",
   "version": "1.0",
-  "description": "Hides Hot Network Questions sidebar on StackExchange websites",
+  "description": "Hide \"Hot Network Questions\" sidebar on StackOverflow and other StackExchange sites",
   "page_action": {
     "default_icon": "tangled_cat_64.png"
   },
