@@ -1,4 +1,4 @@
-# NoSidebar ![Image of Tangled Cat](tangled_cat_64.png)
+# NoSidebar ![Image of Tangled Cat](extension/tangled_cat_64.png)
 
 This Chrome extension hides the "Hot Network Questions" sidebar on StackExchange websites. Let the friendly tangled cat help you keep your mind free from distractions of Buzzfeed-worthy question titles! If you want to take a peek after all, click on the cat to reveal the sidebar.
 
