@@ -7,7 +7,7 @@ chrome.pageAction.onClicked.addListener(function(tab) {
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse) {
 		if( request.message === "enable_page_action" ) {
-			console.log("enabling page action");
+			//console.log("enabling page action");
 			chrome.pageAction.show(sender.tab.id);
 		}
 	}
