@@ -15,7 +15,7 @@
       {
         "matches": [
           "*://*.zulipchat.com/*",
-          "*://zulip.*/*",
+          "*://zulip.*/*"
         ],
         "js": ["content.js"]
       }
