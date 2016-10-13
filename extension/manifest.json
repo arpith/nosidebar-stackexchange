@@ -14,13 +14,8 @@
   "content_scripts": [
       {
         "matches": [
-          "*://*.stackexchange.com/*",
-          "*://stackoverflow.com/*",
-          "*://serverfault.com/*",
-          "*://superuser.com/*",
-          "*://askubuntu.com/*",
-          "*://mathoverflow.net/*",
-          "*://stackapps.com/*"
+          "*://*.zulipchat.com/*",
+          "*://zulip.*/*",
         ],
         "js": ["content.js"]
       }
